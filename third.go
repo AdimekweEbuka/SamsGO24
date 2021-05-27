@@ -63,15 +63,15 @@ func printOut() {
 }
 
 func hotBoySummer(numbersGotten int) int {
-	numbersGotten = numbersGotten + 2
+	numbersGotten2:= numbersGotten + 2
 	if numbersGotten >= 10 {
 		fmt.Println("I've met enough babes for the night")
-		return 10
+		return numbersGotten  // I NEED MORE KNOWLEDGE ON RETURN STATEMENT
 	} else {
 		fmt.Println("Meet more babes")
 	}
 
-	return hotBoySummer(numbersGotten)
+	return hotBoySummer(numbersGotten2)
 }
 
 func eatenYet(x, y int) (int, int, string) {
@@ -94,7 +94,7 @@ func main() {
 	//recursive(1,0)
 	//fmt.Println(anotherFunction(wtmd))
 	hotBoySummer(0)
-	wtmd()
-	eatenYet(10,15)
+	// wtmd()
+	// eatenYet(10,15)
 
 }
